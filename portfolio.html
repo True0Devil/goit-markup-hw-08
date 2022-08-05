@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="logo">
+          <span class="logo--accent">Web</span><span class="logo--secondary">Studio</span>
+        </a>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+            <use href="./images/icons.svg#icon-close" class="icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link current">Портфолио</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Наши работы</h1>
+          <ul class="portfolio-menu">
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__filter">Все</button>
+            </li>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__filter">Веб-сайты</button>
+            </li>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__filter">Приложения</button>
+            </li>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__filter">Дизайн</button>
+            </li>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__filter">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio1.jpg"
+                    alt="веб-сайт на экране лаптопа"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Ментор, привет, это я, твой единственный ученик. На протяжении всего этого
+                      времени я создавал иллюзию того что ты проверяешь домашки разных людей, но это
+                      был я. Сейчас я отправлю это сообщение во всех домашках.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Технокряк</h2>
+                  <p class="portfolio__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio2.jpg"
+                    alt="баскетболисты в прыжке"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      The New Orleans Pelicans are an American professional basketball team based in
+                      New Orleans. The Pelicans compete in the National Basketball Association (NBA)
+                      as a member of the league's Western Conference Southwest Division.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio3.jpg"
+                    alt="лого ресторана"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">Продам гараж 8-800-555-35-35</p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Ресторан Seafood</h2>
+                  <p class="portfolio__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio4.jpg"
+                    alt="наушники"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">Fuck people for confusing nice and good</p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Проект Prime</h2>
+                  <p class="portfolio__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio5.jpg"
+                    alt="две коробки"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      There is an idea of a Patrick Bateman. Some kind of abstraction. But there is
+                      no real me. Only an entity. And though I can hide my cold gaze, and you can
+                      shake my hand and feel flesh gripping yours, and maybe you can even sense our
+                      lifestyles are probably comparable, I simply am not there.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Проект Boxes</h2>
+                  <p class="portfolio__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio6.jpg"
+                    alt="монитор"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Главное условие сохранения энтузиазма к тому, что вы делаете, и желания не
+                      бросать это занятие — находить время на то, чтобы получать от этого радость и
+                      удовольствие. Иногда важно целенаправленно стремиться именно к такому эффекту.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                  <p class="portfolio__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio7.jpg"
+                    alt="открытый журнал"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      — Эрик, — сказал мой отец, — сейчас ты в одной из тех ситуаций, когда зерна
+                      отделяются от плевел. Именно в этот момент ты должен показать, чего ты стоишь.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Издание Limited Edition</h2>
+                  <p class="portfolio__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio8.jpg"
+                    alt="бирка"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">Social suicide speedrunner</p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Проект LAB</h2>
+                  <p class="portfolio__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    src="./images/portfolio9.jpg"
+                    alt="работа за ноутбуком"
+                    width="370"
+                    class="portfolio__img"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__about">
+                  <h2 class="portfolio__title">Growing Business</h2>
+                  <p class="portfolio__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__container--secondary">
+          <div class="footer__container--additional">
+            <a href="./index.html" class="logo footer__logo">
+              <span class="logo--accent">Web</span><span class="logo--alternative">Studio</span>
+            </a>
+            <address>
+              <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="address__list">
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="socials__container">
+            <b class="footer__title">присоединяйтесь</b>
+            <ul class="footer__socials">
+              <li class="socials__item">
+                <a href="#" class="footer__link">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a href="#" class="footer__link">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a href="#" class="footer__link">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a href="#" class="footer__link">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sub">
+          <form name="sub-form" autocomplete="on" class="sub__form">
+            <b class="footer__title">Подпишитесь на рассылку</b>
+            <label class="visually-hidden" for="sub-email">Почта</label>
+            <input
+              type="email"
+              name="sub-email"
+              class="sub__input"
+              placeholder="E-mail"
+              maxlength="30"
+              id="sub-email"
+            />
+            <button type="submit" class="sub-button">
+              <div class="flex">
+                <span class="sub-button__text">Подписаться</span>
+                <svg width="24" height="24" class="sub-button__icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
