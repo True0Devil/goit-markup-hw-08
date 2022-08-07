@@ -24,7 +24,30 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  color: $titleColor;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+
 
 .container {
   margin-right: auto;

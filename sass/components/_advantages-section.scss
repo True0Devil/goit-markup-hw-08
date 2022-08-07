@@ -10,6 +10,12 @@
 .details__item {
   width: 100%;
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
     &:nth-child(2n + 1) {
@@ -46,6 +52,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $titleColor;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .details__description {
